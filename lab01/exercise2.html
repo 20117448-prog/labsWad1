@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 2</title>
+</head>
+
+<body>
+  <script>
+  function checkGrade(score) {
+
+    if (score >= 90) {
+      return "A - Excellent";
+    } 
+    else if (score >= 70) {
+      return "B - Very Good";
+    } 
+    else if (score >= 55) {
+      return "C - Good";
+    } 
+    else if (score >= 40) {
+      return "D - Satisfactory but needs improvement";
+    } 
+    else if (score >= 30) {
+      return "E - Work is needed to reach a Pass Grade";
+    } 
+    else {
+      return "F - A lot of work required";
+    }
+  }
+
+  // Execute function with sample values
+  console.log(checkGrade(75));
+  console.log(checkGrade(38));
+  console.log(checkGrade(63));
+</script>
+</body>
+
+</html>
