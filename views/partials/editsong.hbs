@@ -1,0 +1,57 @@
+<tr class="hide" id="edit{{@index}}">
+
+  <td colspan="4">
+
+    <form class="ui form"
+          method="POST"
+          action="/playlist/{{playlistId}}/updatesong/{{id}}">
+
+      <div class="fields">
+
+        <div class="six wide field">
+          <input
+            type="text"
+            name="title"
+            autofocus
+            required
+            title="Please include a valid Title"
+            placeholder="Title"
+            value="{{title}}">
+        </div>
+
+        <div class="six wide field">
+          <input
+            type="text"
+            name="artist"
+            required
+            title="Please include a valid Artist"
+            placeholder="Artist"
+            value="{{artist}}">
+        </div>
+
+        <div class="two wide field">
+          <button
+            type="reset"
+            class="editSubmit"
+            id="hideEdit{{@index}}"
+            title="Exit without saving">
+            <i class="ui undo icon"></i>
+          </button>
+        </div>
+
+        <div class="two wide field">
+          <button
+            type="submit"
+            class="editSubmit"
+            title="Save changes">
+            <i class="ui save icon"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </td>
+
+</tr>
